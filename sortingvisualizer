@@ -2,7 +2,7 @@
 #include<iostream>
 #include<limits>
 #include<time.h>
-#include<string>
+#include<string.h>
 using namespace std;
 
 const int SCREEN_WIDTH=910;
@@ -10,6 +10,7 @@ const int SCREEN_HEIGHT=750;
 
 const int arrSize=130;
 const int rectSize=7;
+
 
 int arr[arrSize];
 int Barr[arrSize];
@@ -22,7 +23,7 @@ bool complete=false;
 bool init()
 {
     bool success=true;
-    if(SDL_Init(SDL_INIT_VIDEO)<0)
+    if(SDL_Init(SDL_INIT_VIDE)<0)
     {
         cout<<"Couldn't initialize SDL. SDL_Error: "<<SDL_GetError();
         success=false;
